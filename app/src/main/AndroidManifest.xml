@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="bih.in.aanganwadiBenVerification">
+
+
+    <permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <permission android:name="android.permission.READ_PHONE_STATE" />
+    <permission android:name="android.permission.READ_PROFILE" />
+    <permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <permission
+        android:name="android.permission.FLASHLIGHT"
+        android:permissionGroup="android.permission-group.HARDWARE_CONTROLS"
+        android:protectionLevel="normal" />
+    <permission android:name="android.permission.INTERNET" />
+    <permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <permission android:name="android.permission.CAMERA" />
+    <permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission
+        android:name="android.permission.FLASHLIGHT"
+        android:permissionGroup="android.permission-group.HARDWARE_CONTROLS"
+        android:protectionLevel="normal" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <permission
+        android:name="android.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <application
+        android:allowBackup="false"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/icdslogo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/aanganwadi"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".activity.AttendanceActivity"></activity>
+        <activity android:name=".activity.ChooseSchemeActivity" />
+        <activity android:name=".activity.WdcDashBoardActivity" />
+        <activity android:name=".WdcShowDataActivity" />
+        <activity android:name=".activity.ShowUploadData" />
+        <activity android:name=".activity.BendetailActivity" />
+        <activity
+            android:name=".activity.showdata"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".activity.VerifyActivity" />
+        <activity android:name=".activity.HomeActivity" />
+        <activity
+            android:name=".activity.SignupAuthActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity.PlantationReportActivity" />
+        <activity android:name=".activity.MultipulPhotoActivity2" />
+        <activity android:name=".activity.PlantationInspectionActivity" />
+        <activity android:name=".activity.PlantationListActivity" />
+        <activity android:name=".activity.SignUpActivity" />
+        <activity android:name=".activity.DashboardActivity" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.OtpVerifyDataActivity" />
+        <activity
+            android:name=".activity.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="fullSensor">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.MultiplePhotoActivity" />
+        <activity
+            android:name=".activity.CameraActivity"
+            android:screenOrientation="portrait" />
+
+        <uses-library android:name="com.google.android.maps" />
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+
+</manifest>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: io.michaelrocks:paranoid-core:0.3.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.michaelrocks/paranoid-core/0.3.2/40013e69653979eb33c02e21858c2a3a77771fdf/paranoid-core-0.3.2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.michaelrocks/paranoid-core/0.3.2/e0e85daf402b5f07ac2d69f7c4567b6428ea3cb0/paranoid-core-0.3.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.michaelrocks/paranoid-core/0.3.2/5588cdc20150448a68aa97c1b8a065fd073a1b65/paranoid-core-0.3.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

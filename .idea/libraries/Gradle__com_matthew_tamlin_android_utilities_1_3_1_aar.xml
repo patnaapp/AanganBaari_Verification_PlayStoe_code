@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: com.matthew-tamlin:android-utilities:1.3.1@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/01f93a51376eb5c50df14cea858d88ee/jetified-android-utilities-1.3.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/23193db58ada27047217e566ca033691/jetified-android-utilities-1.3.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/23193db58ada27047217e566ca033691/jetified-android-utilities-1.3.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/23193db58ada27047217e566ca033691/jetified-android-utilities-1.3.1/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.matthew-tamlin/android-utilities/1.3.1/b6407132015a870e45c8945a91f1ec2af861f930/android-utilities-1.3.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.matthew-tamlin/android-utilities/1.3.1/411c17375a21d2f986a7fa671b4ec266b68ceb24/android-utilities-1.3.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

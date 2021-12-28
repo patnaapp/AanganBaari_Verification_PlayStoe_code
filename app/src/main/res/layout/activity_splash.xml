@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="end"
+    tools:context="bih.in.aanganwadiBenVerification.activity.SplashActivity"
+    android:background="@color/color_white"
+    >
+
+    <LinearLayout
+        android:id="@+id/ll11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal" >
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="@string/appTitle"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/ll11"
+        >
+        <LinearLayout
+            android:layout_marginBottom="50dp"
+            android:layout_above="@+id/frame1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="बिहार सरकार"
+            android:layout_above="@+id/frame1"
+            android:layout_centerHorizontal="true"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"/>
+        <!--<ImageView-->
+        <!--android:layout_width="120dp"-->
+        <!--android:layout_height="120dp"-->
+        <!--android:background="@drawable/logo1"/>-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="समाज कल्याण विभाग"
+            android:layout_above="@+id/frame1"
+            android:layout_centerHorizontal="true"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="एकीकृत बाल विकास सेवा (ICDS)"
+            android:layout_above="@+id/frame1"
+            android:layout_centerHorizontal="true"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"/> <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="आंगनवाड़ी लभार्थी सत्यापन"
+            android:layout_above="@+id/frame1"
+            android:layout_centerHorizontal="true"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"/>
+        </LinearLayout>
+        <ImageView
+            android:visibility="visible"
+            android:id="@+id/frame1"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/circular_shape_white"
+            android:src="@drawable/icdslogo"
+            />
+
+        <ProgressBar
+            android:id="@+id/progress1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_below="@+id/frame1"
+            android:layout_centerInParent="true"
+            android:secondaryProgress="10"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:src="@drawable/nic"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

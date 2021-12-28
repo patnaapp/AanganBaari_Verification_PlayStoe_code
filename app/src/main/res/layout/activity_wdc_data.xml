@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.showdata">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/header_bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:text="मुख्यमंत्री कन्या उत्थान योजना"
+            android:textColor="@color/color_white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/circular_shape_white"
+            android:padding="8dp"
+            android:src="@drawable/icdslogo" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/header"
+        android:weightSum="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_weight="0.03"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                android:visibility="gone"
+                android:text="Pending data to upload"
+                android:id="@+id/upd_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp">
+            <LinearLayout
+                android:weightSum="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dp"
+                    android:paddingTop="4dp"
+                    android:layout_marginRight="20dp"
+                    android:paddingBottom="5dp">
+
+                    <TextView
+                        android:gravity="center"
+                        android:id="@+id/tv_forest_poshak_pant_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="आंगनवाड़ी सूची *"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/spin_forest_poshak_pant_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/spinner_bg_new"
+                        android:imeOptions="actionUnspecified"
+                        android:paddingRight="10dp"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textColor="#43D305" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_marginTop="4dp"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_weight="1.5"
+                            android:hint="खाता संख्या से खोजे">
+
+                            <EditText
+                                android:id="@+id/et_account"
+                                android:layout_width="match_parent"
+                                android:layout_height="44dp"
+                                android:textSize="15sp"
+                                android:maxLength="4"
+                                android:inputType="phone"
+                                android:backgroundTint="@color/colorPrimary"/>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dp"
+                    android:visibility="gone"
+                    android:paddingTop="8dp"
+                    android:layout_marginRight="20dp"
+                    android:paddingBottom="5dp">
+
+                    <TextView
+                        android:gravity="center"
+                        android:id="@+id/tv_labharthitype"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" लाभार्थी का प्रकार *"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/spin_labharthitype"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/spinner_bg_new"
+                        android:imeOptions="actionUnspecified"
+                        android:paddingRight="10dp"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textColor="#43D305" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <ListView
+            android:descendantFocusability="beforeDescendants"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="10.0sp"
+            android:focusable="false"
+
+            android:layout_margin="10dp"
+            android:id="@+id/listview_showdata"
+            android:layout_weight="0.9"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+        </ListView>
+        <TextView
+            android:id="@+id/tv_Norecord"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FF4B4B"
+            android:text="No Record Found"
+            android:visibility="visible"
+            android:layout_below="@+id/ll_skill"
+            android:layout_above="@+id/footer"/>
+    </LinearLayout>
+
+    <Button android:id="@+id/buton"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/buttonbackshape"
+        android:layout_centerHorizontal="true"
+        android:text="Upload To server"
+        android:layout_height="50dp"
+        android:layout_width="200dp">
+    </Button>
+
+</RelativeLayout>

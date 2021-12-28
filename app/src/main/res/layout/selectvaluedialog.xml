@@ -1,0 +1,152 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+android:layout_margin="10dp"
+android:background="@drawable/edittext_style"
+
+        >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="4dp"
+    android:gravity="center"
+    android:orientation="vertical"
+  >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Sync Records"
+        android:layout_marginLeft="10dp"
+         android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#8B4513"
+
+     />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background= "#215223"
+        android:orientation="horizontal" >
+    </View>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="12dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="वित्तीय वर्ष"
+            android:textSize="15dp"
+            android:textColor="#000000"/>
+    <Spinner
+        android:id="@+id/Spn_finyr"
+        android:layout_width="match_parent"
+        android:background="@drawable/spinner_bg"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:layout_height="50dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="वित्तीय महीना"
+            android:textSize="15dp"
+            android:textColor="#000000"/>
+        <Spinner
+            android:id="@+id/Spn_fin_month"
+            android:layout_width="match_parent"
+            android:background="@drawable/spinner_bg"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:layout_height="50dp" />
+    </LinearLayout>
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="3dp"-->
+        <!--android:layout_marginBottom="3dp"-->
+        <!--android:orientation="vertical">-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Final Khesra No"-->
+            <!--android:textSize="15dp"-->
+            <!--android:textColor="#000000"/>-->
+        <!--<EditText-->
+            <!--android:id="@+id/et_finalkhesra_NO"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/edittext_style"-->
+            <!--android:hint="Enter Final Khesra No "-->
+            <!--android:inputType="phone"-->
+            <!--android:padding="10dp"-->
+            <!--android:textColor="#000000"-->
+            <!--android:textColorHint="@android:color/darker_gray"-->
+            <!--android:maxLength="30"/>-->
+    <!--</LinearLayout>-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingRight="10dp"
+        android:weightSum="1"
+        android:paddingLeft="10dp">
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/buttonbackshape"
+            android:layout_weight="0.5"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:layout_height="wrap_content"
+            android:text="Get Records"/>
+        <Button
+            android:id="@+id/btn_reject"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/buttonbackshape"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.5"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:layout_height="wrap_content"
+            android:text="Cancel"/>
+    </LinearLayout>
+</LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

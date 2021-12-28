@@ -1,0 +1,259 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray">
+
+    <!-- <include
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        layout="@layout/header_view" /> -->
+
+    <include
+        android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        layout="@layout/footer" />
+
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_above="@+id/footer"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/buttonbackshape"
+        android:text="सेभ करें"
+        android:textColor="@android:color/white" />
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:padding="5dp"
+        android:layout_above="@+id/btnOk"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+         <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="1dp"
+                android:orientation="horizontal">
+          <RelativeLayout
+              android:layout_width="0dp"
+              android:layout_weight=".5"
+              android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/imageButton1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:scaleType="fitXY"
+                    android:onClick="onClick"
+                     />
+              <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerInParent="true"
+                  android:orientation="vertical">
+
+                  <ImageView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center_horizontal"
+                      android:src="@drawable/ic_action_photo"/>
+                  <TextView
+                      android:id="@+id/text_p1"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:padding="5dp"
+                      android:layout_gravity="center_vertical" />
+              </LinearLayout>
+          </RelativeLayout>
+             <View
+                 android:visibility="gone"
+                 android:layout_width="0dp"
+                 android:layout_weight=".005"
+                 android:layout_height="match_parent"
+                 android:background="@android:color/white"/>
+             <RelativeLayout
+                 android:visibility="gone"
+                 android:id="@+id/re_p2"
+                 android:layout_width="0dp"
+                 android:layout_weight=".5"
+                 android:layout_height="fill_parent">
+             <ImageView
+                 android:id="@+id/imageButton3"
+                 android:layout_width="match_parent"
+                 android:layout_height="fill_parent"
+                 android:background="@null"
+                 android:onClick="onClick"
+                 android:scaleType="fitXY"
+                 />
+             <LinearLayout
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_centerInParent="true"
+                 android:orientation="vertical">
+
+                 <ImageView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center_horizontal"
+                     android:src="@drawable/ic_action_photo"/>
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:padding="5dp"
+                     android:layout_gravity="center_vertical" />
+             </LinearLayout>
+             </RelativeLayout>
+         </LinearLayout>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@android:color/white"/>
+<LinearLayout
+    android:id="@+id/linearLayout2"
+    android:layout_width="fill_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+      android:layout_marginTop="1dp"
+    android:orientation="horizontal"
+      >
+<RelativeLayout
+    android:layout_width="0dp"
+    android:layout_weight=".5"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageButton2"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="@null"
+        android:onClick="onClick"
+        android:scaleType="fitXY"
+         />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_action_photo"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+</RelativeLayout>
+    <View
+        android:layout_width="0dp"
+        android:layout_weight=".005"
+        android:visibility="gone"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"/>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight=".5"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_weight=".5"
+            android:layout_height="0dp">
+
+            <ImageView
+                android:id="@+id/imageButton4"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:background="@null"
+                android:onClick="onClick"
+                android:scaleType="fitXY"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_action_photo"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_weight=".005"
+            android:layout_height="0dp"
+            android:background="@android:color/white"/>
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_weight=".5"
+            android:layout_height="0dp">
+
+            <ImageView
+
+                android:id="@+id/imageButton5"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:background="@null"
+                android:onClick="onClick"
+                android:scaleType="fitXY"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_action_photo"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:text="उपस्थिति रजिस्टर(P2)"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/white"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

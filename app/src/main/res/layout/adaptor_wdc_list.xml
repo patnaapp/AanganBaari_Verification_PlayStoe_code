@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_margin="4dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+
+            android:layout_margin="2dp"
+            android:orientation="vertical"
+            android:id="@+id/lin_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/lin_ben_women"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:visibility="visible"
+                    android:padding="2dp"
+                    android:weightSum="1"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:visibility="gone"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:layout_weight="0.1"
+                        android:text="सं."
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                    </TextView>
+
+                    <TextView
+                        android:gravity="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:layout_weight="0.22"
+                        android:text="पति का नाम"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                    </TextView>
+
+                    <TextView
+                        android:gravity="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:layout_weight="0.25"
+                        android:text="पत्नी का नाम"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                    </TextView>
+
+                    <TextView
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:layout_weight="0.2"
+                        android:text="श्रेणी"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                    </TextView>
+
+                    <TextView
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_weight="0.4"
+                        android:text="पुष्टि करें"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">/
+                    <LinearLayout
+                        android:visibility="visible"
+                        android:padding="7dp"
+                        android:weightSum="1"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:visibility="gone"
+                            android:gravity="center"
+                            android:lines="2"
+                            android:layout_weight="0.1"
+                            android:text="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content">
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/txt_husName"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.22"
+                            android:gravity="center"
+                            android:lines="3"
+                            android:text="Ramesh"></TextView>
+                        <TextView
+                            android:id="@+id/txt_wifeName"
+                            android:lines="2"
+                            android:gravity="center"
+                            android:layout_weight="0.2"
+                            android:text="Gita devi"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                        <TextView
+                            android:id="@+id/txt_cat"
+                            android:lines="2"
+                            android:gravity="center"
+                            android:layout_weight="0.2"
+                            android:text="obc"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:orientation="vertical"
+                            android:layout_weight="0.37"
+                            android:layout_height="wrap_content">
+
+                            <RadioGroup
+                                android:id="@+id/radioattn1"
+                                android:layout_width="match_parent"
+                                android:layout_weight="0.37"
+                                android:layout_gravity="center_horizontal"
+                                android:gravity="center_horizontal"
+                                android:orientation="horizontal"
+                                android:layout_height="wrap_content" >
+
+                                <RadioButton
+                                    android:id="@+id/radio_Y_attn1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:text="Y"
+                                    android:buttonTint="#346435"
+                                    android:textColor="#356D37"
+                                    />
+
+                                <RadioButton
+                                    android:id="@+id/radio_N_attn1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:text="N"
+                                    android:textColor="#CA2B20"
+                                    android:buttonTint="#CA2B20"
+                                    />
+
+                            </RadioGroup>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <Spinner
+                                    android:id="@+id/spn_status"
+                                    android:background="@drawable/spinner_bg_new"
+                                    android:layout_width="match_parent"
+                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content">
+
+                                </Spinner>
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <EditText
+                                        android:visibility="gone"
+                                        android:hint="Enter No Of Months"
+                                        android:inputType="number"
+                                        android:textSize="12sp"
+                                        android:id="@+id/edt_no_month"
+                                        android:layout_width="match_parent"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content"></EditText>
+
+                                    <TextView
+                                        android:textStyle="bold"
+                                        android:padding="5dp"
+                                        android:gravity="right"
+                                        android:id="@+id/lockstatus"
+                                        android:textColor="@color/holo_green_dark"
+                                        android:text="Unlocked"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/lin_women"
+                android:background="#8D8D8D"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="2dp"
+                android:text="सदस्य का विवरण"
+                android:textStyle="bold"
+                android:visibility="gone" />
+            <LinearLayout
+
+                android:id="@+id/lin_ben_child"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:visibility="visible"
+                    android:gravity="center_vertical"
+                    android:weightSum="5"
+                    android:layout_margin="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:gravity="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:layout_weight="1.2"
+                        android:textSize="13sp"
+                        android:text="पिता \n मां का नाम "
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:gravity="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:textSize="13sp"
+                        android:text="बच्चे का नाम"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:layout_weight="0.7"
+                        android:textSize="13sp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="जन्म "
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:gravity="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:layout_weight="0.8"
+                        android:textSize="13sp"
+                        android:text="लिंग"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:gravity="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+
+                        android:textSize="13sp"
+                        android:text="पुष्टि करें"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+
+                        android:id="@+id/lin_child"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="3dp"
+                        android:visibility="visible"
+                        android:weightSum="5">
+
+                        <TextView
+                            android:id="@+id/txt_f_and_mName"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.2"
+                            android:gravity="center"
+                            android:textSize="13sp"
+                            android:lines="4"
+                            android:text="Ram kumar\nGita devi"></TextView>
+
+                        <TextView
+                            android:id="@+id/txt_childNmae"
+
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:lines="2"
+                            android:text="Ramesh"></TextView>
+
+                        <TextView
+                            android:id="@+id/txt_yr_of_birth"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.7"
+                            android:gravity="center"
+                            android:lines="2"
+                            android:text="2016"></TextView>
+
+                        <TextView
+                            android:id="@+id/txt_sex"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.8"
+                            android:gravity="center"
+                            android:lines="2"
+                            android:text="पुरुष"></TextView>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.3"
+                            android:orientation="vertical">
+
+                            <RadioGroup
+                                android:id="@+id/radioattn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+
+                                android:gravity="center_horizontal"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/radio_Y_attn"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="#346435"
+                                    android:text="Y"
+                                    android:textColor="#356D37"
+                                    android:textStyle="bold" />
+
+                                <RadioButton
+                                    android:id="@+id/radio_N_attn"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="#CA2B20"
+                                    android:text="N"
+                                    android:textColor="#CA2B20"
+                                    android:textStyle="bold" />
+                            </RadioGroup>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:padding="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <EditText
+                            android:id="@+id/edt_no_month_child"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.7"
+                            android:textSize="13sp"
+                            android:hint="Enter No Of Months"
+                            android:inputType="number"></EditText>
+
+                        <Spinner
+                            android:id="@+id/spn_status_child"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.7"
+                            android:background="@drawable/spinner_bg_new">
+
+                        </Spinner>
+
+                        <Button
+                            android:layout_marginLeft="10dp"
+                            android:background="@color/holo_green_dark"
+                            android:textAllCaps="false"
+                            android:textColor="@android:color/white"
+                            android:id="@+id/submit"
+                            android:text="submit"
+                            android:layout_weight="0.5"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"></Button>
+                    </LinearLayout>
+                    <TextView
+                        android:padding="5dp"
+                        android:id="@+id/lockstatus1"
+                        android:textColor="@color/holo_green_dark"
+                        android:textStyle="bold"
+                        android:text="Unlocked"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+
+                android:visibility="gone"
+                android:orientation="horizontal"
+                android:id="@+id/lin_child1"
+                android:weightSum="5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="गर्भवती महिला"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <TextView
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <TextView
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <TextView
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <TextView
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="हाँ"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+                </TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

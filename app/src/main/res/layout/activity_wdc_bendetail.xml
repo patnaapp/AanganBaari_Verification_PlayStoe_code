@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/lin_background"
+    tools:context=".activity.BendetailActivity">
+    <LinearLayout
+        android:padding="7dp"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="16dp"
+            android:gravity="center"
+            android:textColor="@color/color_green"
+            android:text="पिता \n मां का नाम"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"></TextView>
+        <TextView
+            android:textColor="@color/black"
+
+            android:textSize="16dp"
+            android:id="@+id/txt_husname"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:padding="7dp"
+
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/color_green"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:text="बच्चे का नाम"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"></TextView>
+        <TextView
+            android:id="@+id/txt_wifname"
+            android:textColor="@color/black"
+
+            android:textSize="16dp"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:padding="7dp"
+        android:id="@+id/lin_childname"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="center"
+            android:textSize="16dp"
+            android:textColor="@color/color_green"
+            android:text="बच्चे का नाम"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"></TextView>
+        <TextView
+            android:textColor="@color/black"
+
+            android:id="@+id/txt_childname"
+            android:textSize="16dp"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:padding="7dp"
+        android:id="@+id/lin_childage"
+
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/color_green"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:text="जन्म का वर्ष"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"></TextView>
+        <TextView
+            android:textColor="@color/black"
+
+            android:id="@+id/txt_childage"
+            android:textSize="16dp"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:padding="7dp"
+
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/color_green"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:text="लाभार्थी का प्रकार "
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"></TextView>
+        <TextView
+            android:textColor="@color/black"
+
+            android:id="@+id/txt_benType"
+            android:textSize="16dp"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:padding="7dp"
+        android:textColor="@color/color_green"
+
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/color_green"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:text="आधार संख्या"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"></TextView>
+        <TextView
+            android:textColor="@color/black"
+
+            android:id="@+id/txt_aadhar"
+            android:textSize="16dp"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:padding="7dp"
+
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/color_green"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:text="बैंक खाता संख्या"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"></TextView>
+        <TextView
+            android:textColor="@color/black"
+
+            android:id="@+id/txt_acount"
+            android:textSize="16dp"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"></TextView>
+    </LinearLayout> <LinearLayout
+    android:padding="7dp"
+
+    android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/color_green"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:text="IfSC कोड"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"></TextView>
+        <TextView
+            android:textColor="@color/black"
+
+            android:id="@+id/txt_ifsc"
+            android:textSize="16dp"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"></TextView>
+    </LinearLayout>
+    <Button
+        android:textColor="#FFFFFF"
+        android:background="@drawable/buttonshape_red"
+        android:text="ok"
+        android:layout_gravity="center"
+        android:id="@+id/button"
+        android:layout_width="200dp"
+        android:layout_height="50dp"></Button>
+
+</LinearLayout>

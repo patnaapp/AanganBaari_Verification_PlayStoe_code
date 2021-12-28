@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SignupAuthActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_farmer"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:orientation="vertical"
+        android:background="@color/holo_gray_light">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="AUTHENTICATION"
+            android:textColor="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:src="@drawable/vanutsav_logo"
+            android:layout_alignParentRight="true"/>
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:layout_width="36dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_arrow_back"
+            android:layout_alignParentLeft="true"/>
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_oath"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_farmer"
+        app:cardCornerRadius="4dp"
+        android:backgroundTint="@color/colorAccentLight"
+        android:layout_margin="12dp">
+
+        <RelativeLayout
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="बिहार पृथ्वी दिवस संकल्प"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/color_black"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/tv_message"
+                android:layout_below="@+id/tv_title"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="मैं सत्यनिष्ठा से प्रतिज्ञा करता हूँ/करती हूँ कि अपने सभी कार्यों में वन उत्पादों के संरक्षण हेतु सतत् प्रयासरत रहूँगा/रहूँगी, ताकि देश की प्रगति के लिए आवश्यक इन
+सीमित संसाधनों की आपूर्ति अधिक समय तक सम्भव हो सके। आदर्श नागरिक होने के नाते, मैं वन पदार्थों के व्यर्थ उपयोग को रोकने के लिए लोगों को जागरुक
+करंगा/करंगा, ताकि आगे आने वाली पीढ़ी के लिए एक बेहतर वातावरण सुनिश्चित कर, एक नए व स्वस्थ भारत का निर्माण कर सके।"/>
+
+            <CheckBox
+                android:layout_below="@+id/tv_message"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cb_auth"/>
+
+            <Button
+                android:id="@+id/btn_get_otp"
+                android:layout_below="@+id/tv_message"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="8dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:textColor="@color/color_white"
+                android:background="@drawable/buttonshape"
+                android:text="Get Otp"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_margin="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/cv_oath">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Otp">
+
+            <EditText
+                android:id="@+id/et_otp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:inputType="number"
+                android:backgroundTint="@color/colorPrimary"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_margin="12dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/buttonbackshape"
+        android:text="submit"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

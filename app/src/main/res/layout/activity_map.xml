@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/footer"
+        layout="@layout/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        />
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        />
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rel1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:orientation="horizontal"
+        android:padding="2dp">
+
+
+        <!--<ImageView
+            android:id="@+id/logoimage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ps_logo"
+            android:layout_centerInParent="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/logoimage"
+            android:orientation="vertical"
+            android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/logoimage"
+            android:text="@string/title_name"
+            android:textColor="#eeeeee"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/logoimage"
+            android:text="@string/subtitle_name"
+            android:textColor="#00923A"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/digital"
+            android:layout_centerInParent="true"/>
+-->
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rel21"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel24"
+        android:background="#DD8C44"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+
+                android:layout_weight="0.8"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:padding="3dp"
+                android:textAlignment="viewEnd"
+                android:text="Refresh Booth List"
+                android:textColor="#094742"
+                android:textStyle="bold"
+                android:gravity="end" />
+
+
+            <ImageButton
+                android:layout_weight="0.2"
+                android:id="@+id/button_manual"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/sync" />
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rel24"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel1"
+        android:background="#DD8C44"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+           <LinearLayout
+               android:orientation="horizontal"
+               android:layout_width="match_parent"
+               android:layout_height="17sp">
+               <ImageView
+                   android:layout_marginLeft="3sp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_vertical"
+                   android:src="@drawable/circuler_shape_green" />
+               <TextView
+
+                   android:layout_marginLeft="3dp"
+                   android:textSize="11sp"
+                   android:textColor="@android:color/black"
+                   android:text="center :-"
+                   android:id="@+id/detail"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent" />
+           </LinearLayout>
+
+            <View
+                android:background="#2B2424"
+                android:layout_width="match_parent"
+                android:layout_height="2sp"/>
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl_healthFID"
+        android:layout_below="@+id/rel1">
+
+        <Spinner
+
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:id="@+id/spn_healthf_id">
+        </Spinner>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rel2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#DD8C44"
+        android:orientation="vertical">
+
+
+
+
+        <TextView
+            android:text=""
+            android:id="@+id/tv_distance_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+
+            android:visibility="visible" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rel23"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel21"
+        android:background="#DD8C44"
+        android:orientation="vertical">
+        <View
+            android:background="#2B2424"
+            android:layout_width="match_parent"
+            android:layout_height="2sp"/>
+        <LinearLayout
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50sp">
+
+            <EditText
+                android:id="@+id/edt_search"
+                android:layout_width="288dp"
+                android:layout_height="40sp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="5sp"
+                android:layout_weight="0.8"
+                android:background="@drawable/textboxshape"
+                android:hint="Enter Booth Number.."
+                android:inputType="textFilter"
+                android:padding="5dp" />
+
+            <ImageView
+
+                android:id="@+id/img_search"
+
+                android:layout_width="40sp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20sp"
+
+                android:padding="10dp" />
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_below="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/footer"
+        android:orientation="vertical">
+
+        <fragment
+            android:id="@+id/map"
+            class="com.google.android.gms.maps.MapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/abc_action_bar_title_item" />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SATELLITE"
+            android:layout_alignBottom="@+id/map"
+            android:layout_alignParentLeft="true"
+            android:paddingBottom="30dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="10dp"
+            android:textColor="#E05B21"
+            android:textStyle="bold"
+            android:id="@+id/btn_map_satellite"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>
